@@ -1,0 +1,52 @@
+primary-color = #FEB618
+
+.container
+    width 70px
+    height 100%
+    display flex
+    flex-flow column wrap
+    justify-content space-between
+    align-items center
+    background-color white
+    text-align: center
+    border-right: primary-color solid 1px
+    .number-of-restaurants
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+        .number
+            color primary-color
+            transform: rotate(-90deg)
+        .bar
+            width: 2px
+            height 250px
+            background-color: #F2F2F2
+            display: flex
+            flex-flow: row nowrap
+            justify-content: center
+            margin-top: 20px
+            position relative
+            .indicator
+                height 25%
+                width: 4px
+                border-radius: 2px
+                background-color: primary-color
+                position: absolute
+    .lenguaje-configurate
+        // background-color: blue
+        height 150px
+        width: 70px
+        display: flex
+        flex-flow: column nowrap
+        justify-content: space-between
+        p
+            transform: rotate(-90deg)
+            line-height: 67px
+            color gray
+            // background-color: red
+            // height auto
+            display: block
+            cursor pointer
+            &.selected
+                border-top: 3px solid black
+                color black
