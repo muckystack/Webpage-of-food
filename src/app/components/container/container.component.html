@@ -1,28 +1,56 @@
 <div class="global-container">
   <div class="green"></div>
   <div class="center">
+    <!-- Section body -->
     <div class="body">
-        <div class="products">
-          <app-menu></app-menu>
-          <div class="container">
-            <nav>
-              <p>MEALWISE</p>
-              <p>About</p>
-              <p>Partners</p>
-              <p>Deals</p>
-            </nav>
-            <div class="description">
-              <h1>Tired of Waiting <br> for Your Meal?</h1>
-              <p>Mealwise lets you get the food by the best chefs without waiting. <br> Eat what you love and save your time for something cool!</p>
-              <button>Find the restaurant</button>
-            </div>
-            <div class="hot-desserts">
-              <app-dessert></app-dessert>
-              <app-dessert></app-dessert>
-              <app-dessert></app-dessert>
-            </div>
+      <div class="products">
+        <!-- This is the menu -->
+        <app-menu></app-menu>
+        <div class="container">
+          <nav>
+            <p>MEALWISE</p>
+            <p>About</p>
+            <p>Partners</p>
+            <p>Deals</p>
+          </nav>
+          <div class="description">
+            <h1>Tired of Waiting <br> for Your Meal?</h1>
+            <p>Mealwise lets you get the food by the best chefs without waiting. <br> Eat what you love and save your time for something cool!</p>
+            <button>Find the restaurant</button>
+          </div>
+          <div class="hot-desserts">
+            <app-dessert></app-dessert>
+            <app-dessert></app-dessert>
+            <app-dessert></app-dessert>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Section of restaurants-->
+    <div class="restaurants">
+      <div class="container-restaurants">
+        <img src="../../../assets/img/wall-restaurants.jpg" alt="">
+        <div class="details">
+          <div class="navbar">
+            <div class="search">
+              <span>span</span>
+              <input type="text" placeholder="Search">
+            </div>
+            <button>Join us</button>
+          </div>
+          
+          <!-- Restaurants -->
+          <section>
+            <app-restaurant></app-restaurant>
+            <app-restaurant></app-restaurant>
+            <app-restaurant></app-restaurant>
+            <app-restaurant></app-restaurant>
+            <app-restaurant></app-restaurant>
+          </section>
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>
